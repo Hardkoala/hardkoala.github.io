@@ -4,7 +4,7 @@ title:  // V //
 ---
 
 <div class="hero">
-  <h1>/ // V //</h1>
+  <h1> // V //</h1>
   <p class="subtitle">BRP</p>
   <div class="projects">
     {% for project in site.data.projects %}
