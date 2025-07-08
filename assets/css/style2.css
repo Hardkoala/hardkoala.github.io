@@ -1,19 +1,15 @@
 
 body {
   font-family: 'Courier New', monospace;
-  background: url('https://images.unsplash.com/photo-1604866838236-2d04c36c94b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-  background-size: cover;
+  background: #0f0f0f;
   color: #00ffe0;
   margin: 0;
   padding: 2rem;
-  backdrop-filter: brightness(0.9) contrast(1.1);
 }
 
 .hero {
   text-align: center;
   color: #ff2b6d;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
 }
 
 .subtitle {
@@ -29,9 +25,14 @@ body {
 }
 
 .project-card {
-  padding: 1rem;
-  background-color: transparent;
-  border: none;
+  border: 1px solid #00ffe0;
+  padding: 1.2rem;
+  background-color: #1b1b1b;
+  transition: background 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #292929;
 }
 
 a {
