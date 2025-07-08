@@ -1,6 +1,6 @@
 ---
 layout: default
-title: / // V //
+title:  // V //
 ---
 
 <div class="hero">

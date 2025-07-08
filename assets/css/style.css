@@ -1,31 +1,57 @@
+
 body {
   font-family: 'Courier New', monospace;
-  background: black;
+  background: radial-gradient(ellipse at center, #000000 0%, #1a1a1a 100%);
   color: #39ff14;
   margin: 0;
   padding: 2rem;
+  overflow: hidden;
+  animation: bgshift 15s infinite alternate;
 }
+
+@keyframes bgshift {
+  0% {
+    background-position: 0% 0%;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    background-position: 100% 100%;
+    filter: hue-rotate(360deg);
+  }
+}
+
 .hero {
   text-align: center;
-  animation: glitch 1s infinite;
+  animation: glitchtext 1s infinite;
 }
+
 .subtitle {
   font-style: italic;
   margin-top: -10px;
 }
+
 .projects {
   margin-top: 3rem;
   display: grid;
   gap: 1rem;
 }
+
 .project-card {
   border: 1px solid #39ff14;
   padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
 }
-@keyframes glitch {
-  0% { text-shadow: 1px 0 red; }
-  25% { text-shadow: -1px 0 blue; }
-  50% { text-shadow: 1px 0 lime; }
-  75% { text-shadow: -1px 0 magenta; }
-  100% { text-shadow: 1px 0 red; }
+.project-card:hover {
+  background-color: rgba(57, 255, 20, 0.1);
+  transform: scale(1.02);
+}
+
+@keyframes glitchtext {
+  0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+  20% { text-shadow: -2px 0 lime, 2px 0 magenta; }
+  40% { text-shadow: 2px 0 yellow, -2px 0 blue; }
+  60% { text-shadow: -2px 0 orange, 2px 0 green; }
+  80% { text-shadow: 2px 0 purple, -2px 0 white; }
+  100% { text-shadow: 2px 0 red, -2px 0 cyan; }
 }
