@@ -1,0 +1,45 @@
+
+body {
+  font-family: 'Courier New', monospace;
+  background: #0f0f0f;
+  color: #00ffe0;
+  margin: 0;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  color: #ff2b6d;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-top: -10px;
+  color: #bbbbbb;
+}
+
+.projects {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid #00ffe0;
+  padding: 1.2rem;
+  background-color: #1b1b1b;
+  transition: background 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #292929;
+}
+
+a {
+  color: #00ffe0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff2b6d;
+}
