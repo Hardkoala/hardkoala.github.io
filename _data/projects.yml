@@ -1,0 +1,6 @@
+- name: Ejemplo 1
+  url: https://github.com/hardkoala/ejemplo1
+  description: Proyecto de prueba con ruido
+- name: Ejemplo 2
+  url: https://github.com/hardkoala/ejemplo2
+  description: Otro experimento glitch
